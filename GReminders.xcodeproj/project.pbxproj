@@ -19,6 +19,11 @@
 		647F61FE195247AE00DAAB3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E6195247AE00DAAB3C /* UIKit.framework */; };
 		647F6206195247AE00DAAB3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647F6204195247AE00DAAB3C /* InfoPlist.strings */; };
 		647F6208195247AE00DAAB3C /* GRemindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F6207195247AE00DAAB3C /* GRemindersTests.m */; };
+		647F62121952494300DAAB3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647F62111952494300DAAB3C /* Main.storyboard */; };
+		647F621C1952551800DAAB3C /* STaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F621B1952551800DAAB3C /* STaskListTableViewController.m */; };
+		647F62A419527CF300DAAB3C /* GTLCommon_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F62A319527CF300DAAB3C /* GTLCommon_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		647F62AA19527D0800DAAB3C /* GTLNetworking_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F62A919527D0800DAAB3C /* GTLNetworking_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		647F62AC19527E2800DAAB3C /* GTLTasks_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F62AB19527E2800DAAB3C /* GTLTasks_Sources.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 647F61DE195247AE00DAAB3C;
 			remoteInfo = GReminders;
+		};
+		647F622419525F6E00DAAB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647F621D19525F6E00DAAB3C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GTLFramework;
+		};
+		647F622619525F6E00DAAB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647F621D19525F6E00DAAB3C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
+			remoteInfo = GTLTouchStaticLib;
+		};
+		647F622819525F6E00DAAB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647F621D19525F6E00DAAB3C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
+			remoteInfo = GTLUnitTests;
+		};
+		647F622A19525F6E00DAAB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647F621D19525F6E00DAAB3C /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +81,13 @@
 		647F6203195247AE00DAAB3C /* GRemindersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRemindersTests-Info.plist"; sourceTree = "<group>"; };
 		647F6205195247AE00DAAB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		647F6207195247AE00DAAB3C /* GRemindersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRemindersTests.m; sourceTree = "<group>"; };
+		647F62111952494300DAAB3C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		647F621A1952551800DAAB3C /* STaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STaskListTableViewController.h; sourceTree = "<group>"; };
+		647F621B1952551800DAAB3C /* STaskListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STaskListTableViewController.m; sourceTree = "<group>"; };
+		647F621D19525F6E00DAAB3C /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../google-api-objectivec-client-read-only/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
+		647F62A319527CF300DAAB3C /* GTLCommon_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLCommon_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/GTLCommon_Sources.m"; sourceTree = "<group>"; };
+		647F62A919527D0800DAAB3C /* GTLNetworking_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLNetworking_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/GTLNetworking_Sources.m"; sourceTree = "<group>"; };
+		647F62AB19527E2800DAAB3C /* GTLTasks_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasks_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/Services/Tasks/Generated/GTLTasks_Sources.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				647F61E8195247AE00DAAB3C /* GReminders */,
+				647F62AD1952940500DAAB3C /* GTL */,
 				647F6201195247AE00DAAB3C /* GRemindersTests */,
 				647F61E1195247AE00DAAB3C /* Frameworks */,
 				647F61E0195247AE00DAAB3C /* Products */,
@@ -96,6 +137,7 @@
 		647F61E1195247AE00DAAB3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				647F621D19525F6E00DAAB3C /* GTL.xcodeproj */,
 				647F61E2195247AE00DAAB3C /* Foundation.framework */,
 				647F61E4195247AE00DAAB3C /* CoreGraphics.framework */,
 				647F61E6195247AE00DAAB3C /* UIKit.framework */,
@@ -107,8 +149,11 @@
 		647F61E8195247AE00DAAB3C /* GReminders */ = {
 			isa = PBXGroup;
 			children = (
+				647F621A1952551800DAAB3C /* STaskListTableViewController.h */,
+				647F621B1952551800DAAB3C /* STaskListTableViewController.m */,
 				647F61F1195247AE00DAAB3C /* SAppDelegate.h */,
 				647F61F2195247AE00DAAB3C /* SAppDelegate.m */,
+				647F62111952494300DAAB3C /* Main.storyboard */,
 				647F61F4195247AE00DAAB3C /* Images.xcassets */,
 				647F61E9195247AE00DAAB3C /* Supporting Files */,
 			);
@@ -142,6 +187,28 @@
 				647F6204195247AE00DAAB3C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		647F621E19525F6E00DAAB3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				647F622519525F6E00DAAB3C /* GTL.framework */,
+				647F622719525F6E00DAAB3C /* libGTLTouchStaticLib.a */,
+				647F622919525F6E00DAAB3C /* GTLUnitTests.xctest */,
+				647F622B19525F6E00DAAB3C /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		647F62AD1952940500DAAB3C /* GTL */ = {
+			isa = PBXGroup;
+			children = (
+				647F62AB19527E2800DAAB3C /* GTLTasks_Sources.m */,
+				647F62A919527D0800DAAB3C /* GTLNetworking_Sources.m */,
+				647F62A319527CF300DAAB3C /* GTLCommon_Sources.m */,
+			);
+			name = GTL;
+			path = GReminders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +274,12 @@
 			mainGroup = 647F61D6195247AE00DAAB3C;
 			productRefGroup = 647F61E0195247AE00DAAB3C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 647F621E19525F6E00DAAB3C /* Products */;
+					ProjectRef = 647F621D19525F6E00DAAB3C /* GTL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				647F61DE195247AE00DAAB3C /* GReminders */,
@@ -215,11 +288,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		647F622519525F6E00DAAB3C /* GTL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTL.framework;
+			remoteRef = 647F622419525F6E00DAAB3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		647F622719525F6E00DAAB3C /* libGTLTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTLTouchStaticLib.a;
+			remoteRef = 647F622619525F6E00DAAB3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		647F622919525F6E00DAAB3C /* GTLUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTLUnitTests.xctest;
+			remoteRef = 647F622819525F6E00DAAB3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		647F622B19525F6E00DAAB3C /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = 647F622A19525F6E00DAAB3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		647F61DD195247AE00DAAB3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647F62121952494300DAAB3C /* Main.storyboard in Resources */,
 				647F61ED195247AE00DAAB3C /* InfoPlist.strings in Resources */,
 				647F61F5195247AE00DAAB3C /* Images.xcassets in Resources */,
 			);
@@ -241,7 +346,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				647F61F3195247AE00DAAB3C /* SAppDelegate.m in Sources */,
+				647F62AC19527E2800DAAB3C /* GTLTasks_Sources.m in Sources */,
+				647F62A419527CF300DAAB3C /* GTLCommon_Sources.m in Sources */,
 				647F61EF195247AE00DAAB3C /* main.m in Sources */,
+				647F621C1952551800DAAB3C /* STaskListTableViewController.m in Sources */,
+				647F62AA19527D0800DAAB3C /* GTLNetworking_Sources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +469,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GReminders/GReminders-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/OAuth2/Touch",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/OAuth2",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/HTTPFetcher",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Utilities",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Objects",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Services/Tasks/Generated",
+				);
 				INFOPLIST_FILE = "GReminders/GReminders-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -373,6 +493,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GReminders/GReminders-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/OAuth2/Touch",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/OAuth2",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/HTTPFetcher",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Utilities",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Objects",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Services/Tasks/Generated",
+				);
 				INFOPLIST_FILE = "GReminders/GReminders-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -438,6 +569,7 @@
 				647F620D195247AE00DAAB3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		647F620E195247AE00DAAB3C /* Build configuration list for PBXNativeTarget "GRemindersTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +578,7 @@
 				647F6210195247AE00DAAB3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
