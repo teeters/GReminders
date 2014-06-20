@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:GReminders.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../google-api-objectivec-client-read-only/Examples/DrEdit/trunk/objectivec/DrEdit/DrEdit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../gtm-oauth2-read-only/Examples/OAuth2SampleTouch/OAuth2SampleTouch.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../google-api-objectivec-client-read-only/Examples/TasksSample/TasksSample.xcodeproj">
+   </FileRef>
+</Workspace>

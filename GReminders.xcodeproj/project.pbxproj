@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640968491954ABE6003DEE19 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640968481954ABE6003DEE19 /* main.storyboard */; };
+		6409684C1954B291003DEE19 /* STaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409684B1954B291003DEE19 /* STaskListTableViewController.m */; };
 		647F61E3195247AE00DAAB3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E2195247AE00DAAB3C /* Foundation.framework */; };
 		647F61E5195247AE00DAAB3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E4195247AE00DAAB3C /* CoreGraphics.framework */; };
 		647F61E7195247AE00DAAB3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E6195247AE00DAAB3C /* UIKit.framework */; };
@@ -19,8 +21,6 @@
 		647F61FE195247AE00DAAB3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E6195247AE00DAAB3C /* UIKit.framework */; };
 		647F6206195247AE00DAAB3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647F6204195247AE00DAAB3C /* InfoPlist.strings */; };
 		647F6208195247AE00DAAB3C /* GRemindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F6207195247AE00DAAB3C /* GRemindersTests.m */; };
-		647F62121952494300DAAB3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647F62111952494300DAAB3C /* Main.storyboard */; };
-		647F621C1952551800DAAB3C /* STaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F621B1952551800DAAB3C /* STaskListTableViewController.m */; };
 		647F62A419527CF300DAAB3C /* GTLCommon_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F62A319527CF300DAAB3C /* GTLCommon_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		647F62AA19527D0800DAAB3C /* GTLNetworking_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F62A919527D0800DAAB3C /* GTLNetworking_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		647F62AC19527E2800DAAB3C /* GTLTasks_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 647F62AB19527E2800DAAB3C /* GTLTasks_Sources.m */; };
@@ -65,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		640968481954ABE6003DEE19 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		6409684A1954B291003DEE19 /* STaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STaskListTableViewController.h; sourceTree = "<group>"; };
+		6409684B1954B291003DEE19 /* STaskListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STaskListTableViewController.m; sourceTree = "<group>"; };
 		647F61DF195247AE00DAAB3C /* GReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647F61E2195247AE00DAAB3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647F61E4195247AE00DAAB3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,9 +84,6 @@
 		647F6203195247AE00DAAB3C /* GRemindersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRemindersTests-Info.plist"; sourceTree = "<group>"; };
 		647F6205195247AE00DAAB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		647F6207195247AE00DAAB3C /* GRemindersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRemindersTests.m; sourceTree = "<group>"; };
-		647F62111952494300DAAB3C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		647F621A1952551800DAAB3C /* STaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STaskListTableViewController.h; sourceTree = "<group>"; };
-		647F621B1952551800DAAB3C /* STaskListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STaskListTableViewController.m; sourceTree = "<group>"; };
 		647F621D19525F6E00DAAB3C /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../google-api-objectivec-client-read-only/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
 		647F62A319527CF300DAAB3C /* GTLCommon_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLCommon_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/GTLCommon_Sources.m"; sourceTree = "<group>"; };
 		647F62A919527D0800DAAB3C /* GTLNetworking_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLNetworking_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/GTLNetworking_Sources.m"; sourceTree = "<group>"; };
@@ -149,11 +149,11 @@
 		647F61E8195247AE00DAAB3C /* GReminders */ = {
 			isa = PBXGroup;
 			children = (
-				647F621A1952551800DAAB3C /* STaskListTableViewController.h */,
-				647F621B1952551800DAAB3C /* STaskListTableViewController.m */,
+				640968481954ABE6003DEE19 /* main.storyboard */,
+				6409684A1954B291003DEE19 /* STaskListTableViewController.h */,
+				6409684B1954B291003DEE19 /* STaskListTableViewController.m */,
 				647F61F1195247AE00DAAB3C /* SAppDelegate.h */,
 				647F61F2195247AE00DAAB3C /* SAppDelegate.m */,
-				647F62111952494300DAAB3C /* Main.storyboard */,
 				647F61F4195247AE00DAAB3C /* Images.xcassets */,
 				647F61E9195247AE00DAAB3C /* Supporting Files */,
 			);
@@ -324,9 +324,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647F62121952494300DAAB3C /* Main.storyboard in Resources */,
 				647F61ED195247AE00DAAB3C /* InfoPlist.strings in Resources */,
 				647F61F5195247AE00DAAB3C /* Images.xcassets in Resources */,
+				640968491954ABE6003DEE19 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +349,7 @@
 				647F62AC19527E2800DAAB3C /* GTLTasks_Sources.m in Sources */,
 				647F62A419527CF300DAAB3C /* GTLCommon_Sources.m in Sources */,
 				647F61EF195247AE00DAAB3C /* main.m in Sources */,
-				647F621C1952551800DAAB3C /* STaskListTableViewController.m in Sources */,
+				6409684C1954B291003DEE19 /* STaskListTableViewController.m in Sources */,
 				647F62AA19527D0800DAAB3C /* GTLNetworking_Sources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
