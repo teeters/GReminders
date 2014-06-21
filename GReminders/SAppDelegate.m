@@ -8,6 +8,8 @@
 
 #import "SAppDelegate.h"
 
+static NSString * const kClientId = @"YOUR_CLIENT_ID";
+
 @implementation SAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

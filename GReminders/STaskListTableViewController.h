@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GooglePlus/GooglePlus.h>
 
-@interface STaskListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface STaskListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>//, GPPSignInDelegate>
 
 @end
