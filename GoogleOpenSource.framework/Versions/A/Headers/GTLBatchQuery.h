@@ -20,7 +20,7 @@
 //  Batch query documentation:
 //  https://code.google.com/p/google-api-objectivec-client/wiki/Introduction#Batch_Operations
 
-#import "GTLQuery.h"
+#import "GoogleOpenSource/GTLQuery.h"
 
 @interface GTLBatchQuery : NSObject <GTLQueryProtocol> {
  @private

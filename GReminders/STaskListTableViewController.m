@@ -8,10 +8,11 @@
 
 #import "STaskListTableViewController.h"
 #import <GoogleOpenSource/GoogleOpenSource.h>
+#import "GTLTasks.h"
 
 @implementation STaskListTableViewController
 
-/*- (void)awakeFromNib{
+- (void)awakeFromNib{
     [super awakeFromNib];
 }
 
@@ -19,7 +20,7 @@
     [super viewDidLoad];
     
 }
-*/
+
 #pragma mark - UITableView
 
 //Set up a dynamic tableview with two groups: Google Tasks and Reminders.

@@ -20,6 +20,8 @@
 		643F2BEB19560261003EBE58 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643F2BEA19560261003EBE58 /* GoogleOpenSource.framework */; };
 		643F2BED1956066E003EBE58 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643F2BEC1956066E003EBE58 /* MediaPlayer.framework */; };
 		643F2C3319561DE4003EBE58 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 643F2C3219561DE4003EBE58 /* GooglePlus.bundle */; };
+		643F2C50195625C9003EBE58 /* headerPaths.txt in Resources */ = {isa = PBXBuildFile; fileRef = 643F2C4F195625C9003EBE58 /* headerPaths.txt */; };
+		643F2C8819562F69003EBE58 /* GTLTasks_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 643F2C8719562F69003EBE58 /* GTLTasks_Sources.m */; };
 		647F61E3195247AE00DAAB3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E2195247AE00DAAB3C /* Foundation.framework */; };
 		647F61E5195247AE00DAAB3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E4195247AE00DAAB3C /* CoreGraphics.framework */; };
 		647F61E7195247AE00DAAB3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E6195247AE00DAAB3C /* UIKit.framework */; };
@@ -59,6 +61,8 @@
 		643F2BEA19560261003EBE58 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		643F2BEC1956066E003EBE58 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		643F2C3219561DE4003EBE58 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../google-plus-ios-sdk-1.7.0/GooglePlus.bundle"; sourceTree = "<group>"; };
+		643F2C4F195625C9003EBE58 /* headerPaths.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = headerPaths.txt; sourceTree = "<group>"; };
+		643F2C8719562F69003EBE58 /* GTLTasks_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasks_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/Services/Tasks/Generated/GTLTasks_Sources.m"; sourceTree = "<group>"; };
 		647F61DF195247AE00DAAB3C /* GReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647F61E2195247AE00DAAB3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647F61E4195247AE00DAAB3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -159,6 +163,7 @@
 				6409684A1954B291003DEE19 /* STaskListTableViewController.h */,
 				6409684B1954B291003DEE19 /* STaskListTableViewController.m */,
 				647F61F1195247AE00DAAB3C /* SAppDelegate.h */,
+				643F2C8719562F69003EBE58 /* GTLTasks_Sources.m */,
 				647F61F2195247AE00DAAB3C /* SAppDelegate.m */,
 				647F61F4195247AE00DAAB3C /* Images.xcassets */,
 				647F61E9195247AE00DAAB3C /* Supporting Files */,
@@ -169,6 +174,7 @@
 		647F61E9195247AE00DAAB3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				643F2C4F195625C9003EBE58 /* headerPaths.txt */,
 				647F61EA195247AE00DAAB3C /* GReminders-Info.plist */,
 				647F61EB195247AE00DAAB3C /* InfoPlist.strings */,
 				647F61EE195247AE00DAAB3C /* main.m */,
@@ -272,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				647F61ED195247AE00DAAB3C /* InfoPlist.strings in Resources */,
+				643F2C50195625C9003EBE58 /* headerPaths.txt in Resources */,
 				647F61F5195247AE00DAAB3C /* Images.xcassets in Resources */,
 				643F2C3319561DE4003EBE58 /* GooglePlus.bundle in Resources */,
 				640968491954ABE6003DEE19 /* main.storyboard in Resources */,
@@ -294,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				647F61F3195247AE00DAAB3C /* SAppDelegate.m in Sources */,
+				643F2C8819562F69003EBE58 /* GTLTasks_Sources.m in Sources */,
 				647F61EF195247AE00DAAB3C /* main.m in Sources */,
 				6409684C1954B291003DEE19 /* STaskListTableViewController.m in Sources */,
 			);
@@ -424,6 +432,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Objects",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Utilities",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/HTTPFetcher",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Services/Tasks/Generated",
 				);
 				INFOPLIST_FILE = "GReminders/GReminders-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -454,6 +468,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Objects",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Utilities",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/HTTPFetcher",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source",
+					"/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Services/Tasks/Generated",
 				);
 				INFOPLIST_FILE = "GReminders/GReminders-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
