@@ -29,15 +29,6 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    GPPSignIn *signIn = [GPPSignIn sharedInstance];
-    signIn.shouldFetchGooglePlusUser = YES;
-    signIn.clientID = kClientId;
-    signIn.scopes = @[ @"profile" ];
-    [signIn trySilentAuthentication];
-    
-    [[GPPSignIn sharedInstance] authenticate];
-    //^^This test code sends us to the authentication page in Safari.
-    //Next steps: figure out how to check for sign-in, open auth page in embedded webview.
 }
 
 -(void)finishedWithAuth:(GTMOAuth2Authentication *)auth
