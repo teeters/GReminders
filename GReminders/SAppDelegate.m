@@ -7,7 +7,6 @@
 //
 
 #import "SAppDelegate.h"
-#import <GooglePlus/GooglePlus.h>
 
 @implementation SAppDelegate
 
@@ -15,16 +14,6 @@
 {
     
     return YES;
-}
-
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation
-{
-    return [GPPURLHandler handleURL:url
-                  sourceApplication:sourceApplication
-                         annotation:(id)annotation];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

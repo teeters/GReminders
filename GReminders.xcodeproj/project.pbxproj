@@ -19,7 +19,6 @@
 		643F2BE91956024D003EBE58 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643F2BE81956024D003EBE58 /* GooglePlus.framework */; };
 		643F2BEB19560261003EBE58 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643F2BEA19560261003EBE58 /* GoogleOpenSource.framework */; };
 		643F2BED1956066E003EBE58 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643F2BEC1956066E003EBE58 /* MediaPlayer.framework */; };
-		643F2C3319561DE4003EBE58 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 643F2C3219561DE4003EBE58 /* GooglePlus.bundle */; };
 		643F2C50195625C9003EBE58 /* headerPaths.txt in Resources */ = {isa = PBXBuildFile; fileRef = 643F2C4F195625C9003EBE58 /* headerPaths.txt */; };
 		643F2C8819562F69003EBE58 /* GTLTasks_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 643F2C8719562F69003EBE58 /* GTLTasks_Sources.m */; };
 		647F61E3195247AE00DAAB3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E2195247AE00DAAB3C /* Foundation.framework */; };
@@ -60,7 +59,6 @@
 		643F2BE81956024D003EBE58 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		643F2BEA19560261003EBE58 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		643F2BEC1956066E003EBE58 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		643F2C3219561DE4003EBE58 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../google-plus-ios-sdk-1.7.0/GooglePlus.bundle"; sourceTree = "<group>"; };
 		643F2C4F195625C9003EBE58 /* headerPaths.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = headerPaths.txt; sourceTree = "<group>"; };
 		643F2C8719562F69003EBE58 /* GTLTasks_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasks_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/Services/Tasks/Generated/GTLTasks_Sources.m"; sourceTree = "<group>"; };
 		647F61DF195247AE00DAAB3C /* GReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +119,6 @@
 			children = (
 				647F61E8195247AE00DAAB3C /* GReminders */,
 				647F6201195247AE00DAAB3C /* GRemindersTests */,
-				643F2C3219561DE4003EBE58 /* GooglePlus.bundle */,
 				647F61E1195247AE00DAAB3C /* Frameworks */,
 				647F61E0195247AE00DAAB3C /* Products */,
 			);
@@ -282,7 +279,6 @@
 				647F61ED195247AE00DAAB3C /* InfoPlist.strings in Resources */,
 				643F2C50195625C9003EBE58 /* headerPaths.txt in Resources */,
 				647F61F5195247AE00DAAB3C /* Images.xcassets in Resources */,
-				643F2C3319561DE4003EBE58 /* GooglePlus.bundle in Resources */,
 				640968491954ABE6003DEE19 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

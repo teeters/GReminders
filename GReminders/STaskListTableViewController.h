@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GooglePlus/GooglePlus.h>
 
 @class GPPSignInButton;
 
-@interface STaskListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, GPPSignInDelegate>
+@interface STaskListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
