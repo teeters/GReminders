@@ -33,6 +33,7 @@ typedef enum {
 // |GPPSignIn| shared instance with your client ID and any additional scopes,
 // implement the delegate methods for |GPPSignIn|, and add this button to your
 // view hierarchy.
+
 @interface GPPSignInButton : UIButton
 
 // The layout style for the sign-in button. The default style is standard.

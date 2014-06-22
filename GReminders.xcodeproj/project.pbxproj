@@ -79,6 +79,7 @@
 		647F6203195247AE00DAAB3C /* GRemindersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRemindersTests-Info.plist"; sourceTree = "<group>"; };
 		647F6205195247AE00DAAB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		647F6207195247AE00DAAB3C /* GRemindersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRemindersTests.m; sourceTree = "<group>"; };
+		648004DC195739B00060580B /* KeyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +164,8 @@
 				6409684A1954B291003DEE19 /* STaskListTableViewController.h */,
 				6409684B1954B291003DEE19 /* STaskListTableViewController.m */,
 				647F61F1195247AE00DAAB3C /* SAppDelegate.h */,
-				643F2C8719562F69003EBE58 /* GTLTasks_Sources.m */,
 				647F61F2195247AE00DAAB3C /* SAppDelegate.m */,
+				643F2C8719562F69003EBE58 /* GTLTasks_Sources.m */,
 				647F61F4195247AE00DAAB3C /* Images.xcassets */,
 				647F61E9195247AE00DAAB3C /* Supporting Files */,
 			);
@@ -174,6 +175,7 @@
 		647F61E9195247AE00DAAB3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				648004DC195739B00060580B /* KeyDefines.h */,
 				643F2C4F195625C9003EBE58 /* headerPaths.txt */,
 				647F61EA195247AE00DAAB3C /* GReminders-Info.plist */,
 				647F61EB195247AE00DAAB3C /* InfoPlist.strings */,

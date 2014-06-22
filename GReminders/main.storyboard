@@ -27,9 +27,7 @@
                             <outlet property="delegate" destination="dY5-OC-9Bd" id="K5e-rh-qBW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Lists" id="yJq-ma-sKZ">
-                        <barButtonItem key="leftBarButtonItem" title="Accounts" id="MrM-dY-AQf"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="My Lists" id="yJq-ma-sKZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7GJ-UX-181" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

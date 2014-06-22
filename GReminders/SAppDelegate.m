@@ -7,8 +7,7 @@
 //
 
 #import "SAppDelegate.h"
-
-static NSString * const kClientId = @"YOUR_CLIENT_ID";
+#import <GooglePlus/GooglePlus.h>
 
 @implementation SAppDelegate
 
@@ -16,6 +15,16 @@ static NSString * const kClientId = @"YOUR_CLIENT_ID";
 {
     
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [GPPURLHandler handleURL:url
+                  sourceApplication:sourceApplication
+                         annotation:(id)annotation];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

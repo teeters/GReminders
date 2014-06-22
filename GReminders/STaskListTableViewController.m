@@ -9,6 +9,7 @@
 #import "STaskListTableViewController.h"
 #import <GoogleOpenSource/GoogleOpenSource.h>
 #import "GTLTasks.h"
+#import "KeyDefines.h"
 
 @implementation STaskListTableViewController
 
@@ -16,9 +17,32 @@
     [super awakeFromNib];
 }
 
+//Insert Google+ Sign In button as bar button. Decided against this approach for now.
+/*- (void) loadView{
+    [super loadView];
+    
+    GPPSignInButton *signInButton = [[GPPSignInButton alloc] initWithFrame: CGRectMake(0, 0, 60.0f, 30.0f)];
+    UIBarButtonItem *signInButtonItem = [[UIBarButtonItem alloc] initWithCustomView:signInButton];
+    self.navigationItem.leftBarButtonItem = signInButtonItem;
+}*/
+
 -(void)viewDidLoad{
     [super viewDidLoad];
     
+    GPPSignIn *signIn = [GPPSignIn sharedInstance];
+    signIn.shouldFetchGooglePlusUser = YES;
+    signIn.clientID = kClientId;
+    signIn.scopes = @[ @"profile" ];
+    [signIn trySilentAuthentication];
+    
+    [[GPPSignIn sharedInstance] authenticate];
+    //^^This test code sends us to the authentication page in Safari.
+    //Next steps: figure out how to check for sign-in, open auth page in embedded webview.
+}
+
+-(void)finishedWithAuth:(GTMOAuth2Authentication *)auth
+                  error:(NSError *)error{
+    NSLog(@"Received error %@ and auth object %@", error, auth);
 }
 
 #pragma mark - UITableView
