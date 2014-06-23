@@ -7,6 +7,7 @@
 //
 
 #import "STaskListTableViewController.h"
+#import <GTMOAuth2ViewControllerTouch.h>
 
 @implementation STaskListTableViewController
 
