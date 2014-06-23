@@ -68,6 +68,7 @@
 		640968481954ABE6003DEE19 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		6409684A1954B291003DEE19 /* STaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STaskListTableViewController.h; sourceTree = "<group>"; };
 		6409684B1954B291003DEE19 /* STaskListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STaskListTableViewController.m; sourceTree = "<group>"; };
+		6464CDCA1958D35F006B3A71 /* KeyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyDefines.h; sourceTree = "<group>"; };
 		647F61DF195247AE00DAAB3C /* GReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647F61E2195247AE00DAAB3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647F61E4195247AE00DAAB3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +164,7 @@
 		647F61E9195247AE00DAAB3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6464CDCA1958D35F006B3A71 /* KeyDefines.h */,
 				647F61EA195247AE00DAAB3C /* GReminders-Info.plist */,
 				647F61EB195247AE00DAAB3C /* InfoPlist.strings */,
 				647F61EE195247AE00DAAB3C /* main.m */,
