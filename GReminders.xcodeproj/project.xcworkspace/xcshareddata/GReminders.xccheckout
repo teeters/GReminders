@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A376AD2F-4523-4567-9AED-7A0478783F9F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GReminders</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40A532B6-1D74-4EA0-9CD8-7DA402A77DAD</key>
+		<string>http://google-api-objectivec-client.googlecode.com/svn/trunk</string>
+		<key>64E613EE-BD1A-48F6-BDCC-9EF59C11DB02</key>
+		<string>https://github.com/teeters/GReminders.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GReminders.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40A532B6-1D74-4EA0-9CD8-7DA402A77DAD</key>
+		<string>../../../google-api-objectivec-client-read-only</string>
+		<key>64E613EE-BD1A-48F6-BDCC-9EF59C11DB02</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>40A532B6-1D74-4EA0-9CD8-7DA402A77DAD</key>
+		<string>http://google-api-objectivec-client.googlecode.com/svn</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/teeters/GReminders.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>64E613EE-BD1A-48F6-BDCC-9EF59C11DB02</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40A532B6-1D74-4EA0-9CD8-7DA402A77DAD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>google-api-objectivec-client-read-only</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64E613EE-BD1A-48F6-BDCC-9EF59C11DB02</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GReminders</string>
+		</dict>
+	</array>
+</dict>
+</plist>

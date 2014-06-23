@@ -1,0 +1,5 @@
+/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source
+/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Objects
+/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/Utilities
+/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source/HTTPFetcher
+/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Source
