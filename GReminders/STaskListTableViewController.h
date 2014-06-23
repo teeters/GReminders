@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class GPPSignInButton;
-
 @interface STaskListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

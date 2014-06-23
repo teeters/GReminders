@@ -5,10 +5,10 @@
       location = "group:GReminders.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../google-plus-ios-sdk-1.7.0/SampleCode/GooglePlusSample.xcodeproj">
+      location = "group:../google-api-objectivec-client-read-only/Examples/DrEdit/trunk/objectivec/DrEdit/DrEdit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../google-api-objectivec-client-read-only/Examples/DrEdit/trunk/objectivec/DrEdit/DrEdit.xcodeproj">
+      location = "group:../gtm-oauth2-read-only/Examples/OAuth2SampleTouch/OAuth2SampleTouch.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../google-api-objectivec-client-read-only/Examples/TasksSample/TasksSample.xcodeproj">
