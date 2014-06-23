@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Task List Table View Controller - Title-->
+        <!--Task List Table View Controller - My Lists-->
         <scene sceneID="4ek-3B-4An">
             <objects>
                 <tableViewController id="dY5-OC-9Bd" customClass="STaskListTableViewController" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                             <outlet property="delegate" destination="dY5-OC-9Bd" id="K5e-rh-qBW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="rNG-dF-Wiw"/>
+                    <navigationItem key="navigationItem" title="My Lists" id="rNG-dF-Wiw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7GJ-UX-181" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
