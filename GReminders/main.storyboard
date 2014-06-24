@@ -27,7 +27,15 @@
                             <outlet property="delegate" destination="dY5-OC-9Bd" id="K5e-rh-qBW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Lists" id="rNG-dF-Wiw"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="My Lists" id="rNG-dF-Wiw">
+                        <barButtonItem key="leftBarButtonItem" title="Sign In" id="ETz-0H-5jI">
+                            <connections>
+                                <action selector="signInButtonClicked:" destination="dY5-OC-9Bd" id="cOS-x0-KCn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7GJ-UX-181" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		640968491954ABE6003DEE19 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640968481954ABE6003DEE19 /* main.storyboard */; };
-		6409684C1954B291003DEE19 /* STaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409684B1954B291003DEE19 /* STaskListTableViewController.m */; };
+		6409684C1954B291003DEE19 /* STaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409684B1954B291003DEE19 /* STaskListTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6464CDD51958E59E006B3A71 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6464CDD41958E59E006B3A71 /* GTMOAuth2ViewTouch.xib */; };
 		647F61E3195247AE00DAAB3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E2195247AE00DAAB3C /* Foundation.framework */; };
 		647F61E5195247AE00DAAB3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E4195247AE00DAAB3C /* CoreGraphics.framework */; };
 		647F61E7195247AE00DAAB3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E6195247AE00DAAB3C /* UIKit.framework */; };
@@ -69,6 +70,7 @@
 		6409684A1954B291003DEE19 /* STaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STaskListTableViewController.h; sourceTree = "<group>"; };
 		6409684B1954B291003DEE19 /* STaskListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STaskListTableViewController.m; sourceTree = "<group>"; };
 		6464CDCA1958D35F006B3A71 /* KeyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyDefines.h; sourceTree = "<group>"; };
+		6464CDD41958E59E006B3A71 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "../../google-api-objectivec-client-read-only/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
 		647F61DF195247AE00DAAB3C /* GReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647F61E2195247AE00DAAB3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647F61E4195247AE00DAAB3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -169,6 +171,7 @@
 				647F61EB195247AE00DAAB3C /* InfoPlist.strings */,
 				647F61EE195247AE00DAAB3C /* main.m */,
 				647F61F0195247AE00DAAB3C /* GReminders-Prefix.pch */,
+				6464CDD41958E59E006B3A71 /* GTMOAuth2ViewTouch.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6464CDD51958E59E006B3A71 /* GTMOAuth2ViewTouch.xib in Resources */,
 				647F61ED195247AE00DAAB3C /* InfoPlist.strings in Resources */,
 				647F61F5195247AE00DAAB3C /* Images.xcassets in Resources */,
 				640968491954ABE6003DEE19 /* main.storyboard in Resources */,

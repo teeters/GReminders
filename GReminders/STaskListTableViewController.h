@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface STaskListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) NSString *kMyClientID;
+@property (strong, nonatomic) NSString *kMyClientSecret;
+@property (strong, nonatomic) NSString *scope;
 
 @end
