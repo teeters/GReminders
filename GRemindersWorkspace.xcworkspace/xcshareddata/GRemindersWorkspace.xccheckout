@@ -5,58 +5,52 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>46E3588B-301F-4B0D-854B-E37F435E2A94</string>
+	<string>9E28F593-FA16-47C5-B674-E2B25978B99C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>GRemindersWorkspace</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>09D0A8D2-C63B-407B-AA6A-BFD32B84F091</key>
-		<string>https://github.com/googledrive/dredit</string>
-		<key>1EDB6FC8-43E8-4C3A-BC68-4C217F30763F</key>
-		<string>http://gtm-http-fetcher.googlecode.com/svn/trunk/Source</string>
-		<key>342E97FD-6BAD-41D8-A607-4D2EEDB97491</key>
-		<string>http://gtm-http-fetcher.googlecode.com/svn/trunk/Source</string>
-		<key>398426A2-455A-4B24-BA34-44616C9FCFB4</key>
-		<string>https://github.com/teeters/GReminders.git</string>
-		<key>98D57988-778E-4D04-86DA-863C287808C9</key>
-		<string>http://gtm-oauth2.googlecode.com/svn/trunk/Source</string>
-		<key>A7362949-B3FE-438E-A4CB-6236A4CDB622</key>
+		<key>2ED2BF41-2C63-4F3A-B4FF-F13BE9F66998</key>
 		<string>http://google-api-objectivec-client.googlecode.com/svn/trunk</string>
-		<key>F7291978-1DC0-4E6C-8505-35E4ACA6781A</key>
+		<key>395537FC-32E9-4464-9FD1-BDF5E1FE3589</key>
 		<string>http://gtm-oauth2.googlecode.com/svn/trunk</string>
+		<key>84DC9AAE-33E8-4EA8-97E9-452043BC2D64</key>
+		<string>http://gtm-http-fetcher.googlecode.com/svn/trunk/Source</string>
+		<key>8E8C3186-EFB3-4CA0-B779-CD9F758EC154</key>
+		<string>https://github.com/teeters/GReminders.git</string>
+		<key>A9CFB56A-71D8-4484-8D46-33DE1971A7E7</key>
+		<string>http://gtm-http-fetcher.googlecode.com/svn/trunk/Source</string>
+		<key>D1E61380-4476-46AB-97DA-6C6D98DCBF69</key>
+		<string>http://gtm-oauth2.googlecode.com/svn/trunk/Source</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>GRemindersWorkspace.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>09D0A8D2-C63B-407B-AA6A-BFD32B84F091</key>
-		<string>../../google-api-objectivec-client-read-only/Examples/DrEdit</string>
-		<key>1EDB6FC8-43E8-4C3A-BC68-4C217F30763F</key>
-		<string>../../google-api-objectivec-client-read-only/Source/HTTPFetcher</string>
-		<key>342E97FD-6BAD-41D8-A607-4D2EEDB97491</key>
-		<string>../../gtm-oauth2-read-only/HTTPFetcher</string>
-		<key>398426A2-455A-4B24-BA34-44616C9FCFB4</key>
-		<string>..</string>
-		<key>98D57988-778E-4D04-86DA-863C287808C9</key>
-		<string>../../google-api-objectivec-client-read-only/Source/OAuth2</string>
-		<key>A7362949-B3FE-438E-A4CB-6236A4CDB622</key>
+		<key>2ED2BF41-2C63-4F3A-B4FF-F13BE9F66998</key>
 		<string>../../google-api-objectivec-client-read-only</string>
-		<key>F7291978-1DC0-4E6C-8505-35E4ACA6781A</key>
+		<key>395537FC-32E9-4464-9FD1-BDF5E1FE3589</key>
 		<string>../../gtm-oauth2-read-only</string>
+		<key>84DC9AAE-33E8-4EA8-97E9-452043BC2D64</key>
+		<string>../../gtm-oauth2-read-only/HTTPFetcher</string>
+		<key>8E8C3186-EFB3-4CA0-B779-CD9F758EC154</key>
+		<string>..</string>
+		<key>A9CFB56A-71D8-4484-8D46-33DE1971A7E7</key>
+		<string>../../google-api-objectivec-client-read-only/Source/HTTPFetcher</string>
+		<key>D1E61380-4476-46AB-97DA-6C6D98DCBF69</key>
+		<string>../../google-api-objectivec-client-read-only/Source/OAuth2</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
-		<key>09D0A8D2-C63B-407B-AA6A-BFD32B84F091</key>
-		<string>https://github.com/googledrive/dredit</string>
-		<key>1EDB6FC8-43E8-4C3A-BC68-4C217F30763F</key>
-		<string>http://gtm-http-fetcher.googlecode.com/svn</string>
-		<key>342E97FD-6BAD-41D8-A607-4D2EEDB97491</key>
-		<string>http://gtm-http-fetcher.googlecode.com/svn</string>
-		<key>98D57988-778E-4D04-86DA-863C287808C9</key>
-		<string>http://gtm-oauth2.googlecode.com/svn</string>
-		<key>A7362949-B3FE-438E-A4CB-6236A4CDB622</key>
+		<key>2ED2BF41-2C63-4F3A-B4FF-F13BE9F66998</key>
 		<string>http://google-api-objectivec-client.googlecode.com/svn</string>
-		<key>F7291978-1DC0-4E6C-8505-35E4ACA6781A</key>
+		<key>395537FC-32E9-4464-9FD1-BDF5E1FE3589</key>
+		<string>http://gtm-oauth2.googlecode.com/svn</string>
+		<key>84DC9AAE-33E8-4EA8-97E9-452043BC2D64</key>
+		<string>http://gtm-http-fetcher.googlecode.com/svn</string>
+		<key>A9CFB56A-71D8-4484-8D46-33DE1971A7E7</key>
+		<string>http://gtm-http-fetcher.googlecode.com/svn</string>
+		<key>D1E61380-4476-46AB-97DA-6C6D98DCBF69</key>
 		<string>http://gtm-oauth2.googlecode.com/svn</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -64,21 +58,9 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>398426A2-455A-4B24-BA34-44616C9FCFB4</string>
+	<string>8E8C3186-EFB3-4CA0-B779-CD9F758EC154</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
-			<string>branches</string>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
-			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
-			<string>trunk</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>09D0A8D2-C63B-407B-AA6A-BFD32B84F091</string>
-			<key>IDESourceControlWCCName</key>
-			<string>DrEdit</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
 			<string>branches</string>
@@ -89,7 +71,7 @@
 			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
 			<string>trunk</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A7362949-B3FE-438E-A4CB-6236A4CDB622</string>
+			<string>2ED2BF41-2C63-4F3A-B4FF-F13BE9F66998</string>
 			<key>IDESourceControlWCCName</key>
 			<string>google-api-objectivec-client-read-only</string>
 		</dict>
@@ -97,7 +79,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>398426A2-455A-4B24-BA34-44616C9FCFB4</string>
+			<string>8E8C3186-EFB3-4CA0-B779-CD9F758EC154</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GReminders</string>
 		</dict>
@@ -111,7 +93,7 @@
 			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
 			<string>trunk</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F7291978-1DC0-4E6C-8505-35E4ACA6781A</string>
+			<string>395537FC-32E9-4464-9FD1-BDF5E1FE3589</string>
 			<key>IDESourceControlWCCName</key>
 			<string>gtm-oauth2-read-only</string>
 		</dict>
@@ -125,7 +107,7 @@
 			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
 			<string>trunk</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1EDB6FC8-43E8-4C3A-BC68-4C217F30763F</string>
+			<string>A9CFB56A-71D8-4484-8D46-33DE1971A7E7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HTTPFetcher</string>
 		</dict>
@@ -139,7 +121,7 @@
 			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
 			<string>trunk</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>342E97FD-6BAD-41D8-A607-4D2EEDB97491</string>
+			<string>84DC9AAE-33E8-4EA8-97E9-452043BC2D64</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HTTPFetcher</string>
 		</dict>
@@ -153,7 +135,7 @@
 			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
 			<string>trunk</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>98D57988-778E-4D04-86DA-863C287808C9</string>
+			<string>D1E61380-4476-46AB-97DA-6C6D98DCBF69</string>
 			<key>IDESourceControlWCCName</key>
 			<string>OAuth2</string>
 		</dict>

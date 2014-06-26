@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		640968491954ABE6003DEE19 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640968481954ABE6003DEE19 /* main.storyboard */; };
-		6409684C1954B291003DEE19 /* STaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409684B1954B291003DEE19 /* STaskListTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6409684C1954B291003DEE19 /* STaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6409684B1954B291003DEE19 /* STaskListTableViewController.m */; };
 		6464CDD51958E59E006B3A71 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6464CDD41958E59E006B3A71 /* GTMOAuth2ViewTouch.xib */; };
 		647F61E3195247AE00DAAB3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E2195247AE00DAAB3C /* Foundation.framework */; };
 		647F61E5195247AE00DAAB3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647F61E4195247AE00DAAB3C /* CoreGraphics.framework */; };

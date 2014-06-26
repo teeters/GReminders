@@ -5,7 +5,7 @@
       location = "group:GReminders.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../google-api-objectivec-client-read-only/Examples/DrEdit/trunk/objectivec/DrEdit/DrEdit.xcodeproj">
+      location = "absolute:/Users/samuelteeter/Scripts/google-api-objectivec-client-read-only/Examples/TasksSample/../DrEdit/trunk/objectivec/DrEdit/DrEdit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../gtm-oauth2-read-only/Examples/OAuth2SampleTouch/OAuth2SampleTouch.xcodeproj">
