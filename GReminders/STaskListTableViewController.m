@@ -14,15 +14,14 @@
 static NSString *const kKeychainItemName = @"GReminders";
 
 @interface STaskListTableViewController ()
-@property (strong, nonatomic) NSString *kMyClientID;
-@property (strong, nonatomic) NSString *kMyClientSecret;
-@property (strong, nonatomic) NSString *scope;
+
 @property BOOL isAuthorized;
 
 @property (strong, nonatomic) GTMOAuth2Authentication *auth;
 @property (readonly) GTLServiceTasks *tasksService;
 @property (retain) GTLTasksTaskLists *taskLists;
 @property (retain) GTLServiceTicket *taskListsTicket;
+@property (retain) NSError *taskListsFetchError;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *signInButton;
 
@@ -38,6 +37,39 @@ static NSString *const kKeychainItemName = @"GReminders";
 
 @implementation STaskListTableViewController
 
+@synthesize taskLists = tasksLists_,
+            taskListsTicket = taskListsTicket_,
+            taskListsFetchError = taskListsFetchError_;
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    kMyClientID = ClientID;
+    kMyClientSecret = ClientSecret;
+    scope = MyScope;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // Check for authorization.
+    GTMOAuth2Authentication *auth =
+    [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:kKeychainItemName
+                                                          clientID:kMyClientID
+                                                      clientSecret:kMyClientSecret];
+    if ([auth canAuthorize]) {
+        [self isAuthorizedWithAuthentication:auth];
+    }
+    else{
+        self.isAuthorized = NO;
+        self.signInButton.title = @"Sign In";
+        [self presentSignInView];
+    }
+}
+
+#pragma mark Sign In
+
 - (IBAction)signInButtonClicked:(id)sender {
     if (!self.isAuthorized)
         [self presentSignInView];
@@ -45,8 +77,10 @@ static NSString *const kKeychainItemName = @"GReminders";
     {
         [GTMOAuth2ViewControllerTouch removeAuthFromKeychainForName:kKeychainItemName];
         [GTMOAuth2ViewControllerTouch revokeTokenForGoogleAuthentication:self.auth];
+        self.taskLists = nil;
         self.isAuthorized = NO;
         self.signInButton.title = @"Sign In";
+        [self.tableView reloadData];
     }
 }
 
@@ -54,12 +88,9 @@ static NSString *const kKeychainItemName = @"GReminders";
 {
     //Initialize authentication view:
     GTMOAuth2ViewControllerTouch *viewController;
-    _kMyClientID = ClientID;
-    _kMyClientSecret = ClientSecret;
-    _scope = MyScope;
-    viewController = [[GTMOAuth2ViewControllerTouch alloc] initWithScope:_scope
-                                                                 clientID:_kMyClientID
-                                                             clientSecret:_kMyClientSecret
+    viewController = [[GTMOAuth2ViewControllerTouch alloc] initWithScope:scope
+                                                                 clientID:kMyClientID
+                                                             clientSecret:kMyClientSecret
                                                          keychainItemName:kKeychainItemName
                                                                  delegate:self
                                                          finishedSelector:@selector(viewController:finishedWithAuth:error:)];
@@ -71,10 +102,12 @@ static NSString *const kKeychainItemName = @"GReminders";
                  error:(NSError *)error {
     if (error != nil) {
         // Authentication failed
+        NSLog(@"Authentication error");
     } else {
         // Authentication succeeded. Retain auth.
         self.auth = auth;
         [self isAuthorizedWithAuthentication:auth];
+        NSLog(@"Authentication successful");
     }
 }
 
@@ -84,7 +117,10 @@ static NSString *const kKeychainItemName = @"GReminders";
     self.signInButton.title = @"Sign out";
     self.isAuthorized = YES;
     //call method to load task lists into tableview.
+    [self fetchTaskLists];
 }
+
+#pragma mark Fetch Google Task Lists
 
 - (GTLServiceTasks *)tasksService {
     static GTLServiceTasks *service = nil;
@@ -99,9 +135,36 @@ static NSString *const kKeychainItemName = @"GReminders";
         // Have the service object set tickets to retry temporary error conditions
         // automatically
         service.retryEnabled = YES;
+        
+        //Continue to function in background--very important.
+        service.shouldFetchInBackground = YES;
     }
     return service;
 }
+
+- (void)fetchTaskLists{
+    self.taskLists = nil;
+    self.taskListsFetchError = nil;
+    
+    GTLServiceTasks *service = self.tasksService;
+    
+    GTLQueryTasks *query = [GTLQueryTasks queryForTasklistsList];
+    
+    self.taskListsTicket = [service executeQuery:query
+                               completionHandler:^(GTLServiceTicket *ticket,
+                                                   id taskLists, NSError *error){
+                                   // callback
+                                   self.taskLists = taskLists;
+                                   self.taskListsFetchError = error;
+                                   self.taskListsTicket = nil;
+                                   
+                                   [self.tableView reloadData];
+                            }];
+    //now display the data
+    [self.tableView reloadData];
+}
+
+#pragma mark Tableview
 
     //Set up a dynamic tableview with two groups: Google Tasks and Reminders.
 
@@ -112,8 +175,16 @@ static NSString *const kKeychainItemName = @"GReminders";
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //Add code here to get the number of task lists for each section. For now,
-    return 2;
+    //Add code here to get the number of task lists for each section. Remember to set
+    //isAuthorized before reloading the tableview.
+    if (section == 1){
+        if (self.isAuthorized){
+            return [self.taskLists.items count];
+        }
+        return 1;
+    }
+    else
+        return 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -133,7 +204,15 @@ static NSString *const kKeychainItemName = @"GReminders";
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:MyIdentifier];
     }
-    //Add code here to fill in names of task lists.
+    if (indexPath.section == 1 && self.isAuthorized){
+        GTLTasksTaskList *item = [self.taskLists itemAtIndex:indexPath.row];
+        NSString *title = item.title;
+        cell.textLabel.text = title;
+        //add sync button somehow
+    }
+    
+    else
+        cell.textLabel.text = @""; //blank out old cells if we're signed out
     return cell;
 }
 
