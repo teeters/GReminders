@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GTMOAuth2Authentication.h>
 #import "GTLTasks.h"
+#import <EventKit/EventKit.h>
 
 @interface STaskListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
 @private
@@ -20,5 +21,6 @@
     GTLServiceTicket *taskListsTicket_;
     NSError *taskListsFetchError_;
     GTLServiceTicket *editTaskListTicket_;
+    EKEventStore *eventStore_;
 }
 @end

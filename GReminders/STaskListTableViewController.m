@@ -23,6 +23,9 @@ static NSString *const kKeychainItemName = @"GReminders";
 @property (retain) GTLServiceTicket *taskListsTicket;
 @property (retain) NSError *taskListsFetchError;
 
+@property (nonatomic, strong) NSMutableArray *reminderLists;
+@property (nonatomic, strong) EKEventStore *eventStore;
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *signInButton;
 
 - (IBAction)signInButtonClicked:(id)sender;
@@ -39,7 +42,10 @@ static NSString *const kKeychainItemName = @"GReminders";
 
 @synthesize taskLists = tasksLists_,
             taskListsTicket = taskListsTicket_,
-            taskListsFetchError = taskListsFetchError_;
+            taskListsFetchError = taskListsFetchError_,
+            eventStore = eventStore_;
+
+#pragma mark View Life Cycle
 
 - (void)awakeFromNib
 {
@@ -53,7 +59,9 @@ static NSString *const kKeychainItemName = @"GReminders";
 {
     [super viewDidLoad];
     
-    // Check for authorization.
+    //Need to check for network connection somehow.
+    
+    // Check for Google authorization.
     GTMOAuth2Authentication *auth =
     [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:kKeychainItemName
                                                           clientID:kMyClientID
@@ -64,11 +72,17 @@ static NSString *const kKeychainItemName = @"GReminders";
     else{
         self.isAuthorized = NO;
         self.signInButton.title = @"Sign In";
-        [self presentSignInView];
     }
+    
+    //Get Reminders access (expensive to initialize eventStore, so don't repeat unnecessarily):
+    self.eventStore = [[EKEventStore alloc] init];
+    [self requestRemindersAccess];
+
+    //Get the Reminders lists (EKCalendar objects).
+    [self fetchReminders];
 }
 
-#pragma mark Sign In
+#pragma mark Google Sign In
 
 - (IBAction)signInButtonClicked:(id)sender {
     if (!self.isAuthorized)
@@ -102,12 +116,12 @@ static NSString *const kKeychainItemName = @"GReminders";
                  error:(NSError *)error {
     if (error != nil) {
         // Authentication failed
-        NSLog(@"Authentication error");
+        NSLog(@"Error signing into Google");
     } else {
         // Authentication succeeded. Retain auth.
         self.auth = auth;
         [self isAuthorizedWithAuthentication:auth];
-        NSLog(@"Authentication successful");
+        NSLog(@"Google sign-in successful");
     }
 }
 
@@ -164,6 +178,55 @@ static NSString *const kKeychainItemName = @"GReminders";
     [self.tableView reloadData];
 }
 
+#pragma mark Fetch Reminders
+
+-(void)fetchReminders{
+    [self checkEventStoreAccessForCalendar];
+    self.reminderLists = [NSMutableArray arrayWithArray:
+                          [self.eventStore calendarsForEntityType:EKEntityTypeReminder]];
+    [self.tableView reloadData];
+}
+
+-(void)checkEventStoreAccessForCalendar
+{
+    EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
+    
+    switch (status)
+    {
+            // Update our UI if the user has granted access to their Calendar
+        case EKAuthorizationStatusAuthorized: [self.tableView reloadData];
+            break;
+            // Prompt the user for access to Calendar if there is no definitive answer
+        case EKAuthorizationStatusNotDetermined: [self requestRemindersAccess];
+            break;
+            // Display a message if the user has denied or restricted access to Calendar
+        case EKAuthorizationStatusDenied:
+        case EKAuthorizationStatusRestricted:
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Privacy Warning" message:@"Permission was not granted for Calendar"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+-(void) requestRemindersAccess{
+    [self.eventStore requestAccessToEntityType:EKEntityTypeReminder completion:^(BOOL granted, NSError *error)
+     {
+         if (granted){
+             NSLog(@"EventStore connection successful");
+             [self.tableView reloadData];
+         }
+         else
+             NSLog(@"Error connecting to EventStore");
+     }];
+}
+
 #pragma mark Tableview
 
     //Set up a dynamic tableview with two groups: Google Tasks and Reminders.
@@ -177,14 +240,13 @@ static NSString *const kKeychainItemName = @"GReminders";
 {
     //Add code here to get the number of task lists for each section. Remember to set
     //isAuthorized before reloading the tableview.
-    if (section == 1){
-        if (self.isAuthorized){
-            return [self.taskLists.items count];
-        }
-        return 1;
+    if (section == 1 && self.isAuthorized){
+        return [self.taskLists.items count];
     }
-    else
-        return 1;
+    else if (section ==2 && self.isAuthorized){
+        return [self.reminderLists count];
+    }
+    return 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -209,6 +271,11 @@ static NSString *const kKeychainItemName = @"GReminders";
         NSString *title = item.title;
         cell.textLabel.text = title;
         //add sync button somehow
+    }
+    else if (indexPath.section == 2 && self.isAuthorized){
+        EKCalendar *item = self.reminderLists[indexPath.row];
+        NSString *title = item.title;
+        cell.textLabel.text = title;
     }
     
     else
