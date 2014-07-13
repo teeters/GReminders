@@ -22,5 +22,7 @@
     NSError *taskListsFetchError_;
     GTLServiceTicket *editTaskListTicket_;
     EKEventStore *eventStore_;
+    
+    NSArray *sectionTitles;
 }
 @end

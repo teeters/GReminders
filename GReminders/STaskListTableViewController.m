@@ -59,6 +59,9 @@ static NSString *const kKeychainItemName = @"GReminders";
 {
     [super viewDidLoad];
     
+    //Load instance variables:
+    sectionTitles = [NSArray arrayWithObjects:@"Synced", @"Google Tasks", @"Reminders", nil];
+    
     //Need to check for network connection somehow.
     
     // Check for Google authorization.
@@ -240,10 +243,10 @@ static NSString *const kKeychainItemName = @"GReminders";
 {
     //Add code here to get the number of task lists for each section. Remember to set
     //isAuthorized before reloading the tableview.
-    if (section == 1 && self.isAuthorized){
+    if ([sectionTitles[section] isEqualToString:@"Google Tasks"] && self.isAuthorized){
         return [self.taskLists.items count];
     }
-    else if (section ==2 && self.isAuthorized){
+    else if ([sectionTitles[section] isEqualToString:@"Reminders"] && self.isAuthorized){
         return [self.reminderLists count];
     }
     return 1;
@@ -251,12 +254,7 @@ static NSString *const kKeychainItemName = @"GReminders";
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    if (section == 0)
-        return @"Synced";
-    else if (section == 1)
-        return @"Google Tasks";
-    else
-        return @"Reminders";
+    return sectionTitles[section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
